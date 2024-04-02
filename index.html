@@ -51,7 +51,21 @@
                     document.getElementById("start").innerHTML = "  "
 
                 }, 5000);
-                document.getElementById("start").innerHTML = "Your next game will start in 5 seconds"
+                var seconds = 5;
+                console.log('helllo world');
+                var timer = setInterval(() => {
+                    if (seconds >0){
+                        seconds --;
+                        console.log(seconds);
+                        if(seconds>0){
+                            document.getElementById("start").innerHTML = "Your next game will start in "+seconds+" seconds";
+                        } else {
+                        document.getElementById("start").innerHTML = "START";
+                        }
+                    } else {
+                        return;
+                    }
+                }, 1000);
                 document.getElementById("xscore").innerHTML = scoreX;
                 document.getElementById("oscore").innerHTML = scoreO;
                 document.getElementById('b1').disabled = true;
@@ -93,7 +107,21 @@
                     document.getElementById("start").innerHTML = "  "
 
                 }, 5000);
-                document.getElementById("start").innerHTML = "Your next game will start in 5 seconds"
+                var seconds = 5;
+                console.log('helllo world');
+                var timer = setInterval(() => {
+                    if (seconds >0){
+                        seconds --;
+                        console.log(seconds);
+                        if(seconds>0){
+                            document.getElementById("start").innerHTML = "Your next game will start in "+seconds+" seconds";
+                        } else {
+                        document.getElementById("start").innerHTML = "START";
+                        }
+                    } else {
+                        return;
+                    }
+                }, 1000);
                 document.getElementById("xscore").innerHTML = scoreX;
                 document.getElementById("oscore").innerHTML = scoreO;
                 document.getElementById('b1').disabled = true;
@@ -138,7 +166,20 @@
                     document.getElementById("start").innerHTML = "  "
 
                 }, 5000);
-                document.getElementById("start").innerHTML = "Your next game will start in 5 seconds"
+                var seconds = 5;
+                var timer = setInterval(() => {
+                    if (seconds >0){
+                        seconds --;
+                        console.log(seconds);
+                        if(seconds>0){
+                            document.getElementById("start").innerHTML = "Your next game will start in "+seconds+" seconds";
+                        } else {
+                        document.getElementById("start").innerHTML = "START";
+                        }
+                    } else {
+                        return;
+                    }
+                }, 1000);
             }
         }
 
